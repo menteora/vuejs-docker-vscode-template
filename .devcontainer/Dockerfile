@@ -4,7 +4,7 @@ FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:${VARIANT}
 
 ENV PATH /app/node_modules/.bin:$PATH
 
-RUN sudo -u node npm install -g @vue/cli @vue/cli-service-global
+RUN sudo -u node npm install -g http-server @vue/cli @vue/cli-service-global
 WORKDIR /app
 
 EXPOSE 8080
